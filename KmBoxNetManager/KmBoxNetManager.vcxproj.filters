@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demo">
+      <UniqueIdentifier>{b0cc7a0b-e20d-41d8-b2b7-395b24932c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KmBoxNetManage">
+      <UniqueIdentifier>{82556bad-9878-4616-9a36-3c23d567931e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KmBoxNetManager.h">
+      <Filter>KmBoxNetManage</Filter>
+    </ClInclude>
+    <ClInclude Include="KmBoxConfig.h">
+      <Filter>KmBoxNetManage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KmBoxNetManager.cpp">
+      <Filter>KmBoxNetManage</Filter>
+    </ClCompile>
+    <ClCompile Include="demo.cpp">
+      <Filter>Demo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
