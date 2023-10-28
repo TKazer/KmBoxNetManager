@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/KmBoxNetManager/x64/Debug
+/x64/Debug
+/.vs/KmBoxNetManager
