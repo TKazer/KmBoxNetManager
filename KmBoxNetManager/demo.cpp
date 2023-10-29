@@ -12,8 +12,13 @@ int main()
 
 	std::cout << "KmBoxNet Initialize succeed." << std::endl;
 
+	KmBoxMgr.KeyBoard.StartMonitor(12345);
+
 	while (true)
 	{
+		if (KmBoxMgr.KeyBoard.GetKeyState(KEY_HOME))
+			std::cout << "Pressed [Home]." << std::endl;
+
 		if (GetAsyncKeyState(VK_END) & 0x8000)
 			break;
 
@@ -47,6 +52,8 @@ int main()
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
+
+	KmBoxMgr.KeyBoard.EndMonitor();
 END:
 	system("pause");
 	return 0;
